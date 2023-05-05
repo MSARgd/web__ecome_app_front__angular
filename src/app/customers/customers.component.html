@@ -1,1 +1,26 @@
-<p>customers works!</p>
+<h2>Customers</h2>
+<div class="container">
+  <table class="table" *ngIf="customers">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of customers">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.email}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getOrders(c)"></button>
+
+      </td>
+    </tr>
+    </tbody>
+
+  </table>
+</div>

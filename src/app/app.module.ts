@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { ProdcutsComponent } from './prodcuts/prodcuts.component';
 import { CustomersComponent } from './customers/customers.component';
 import { HttpClientModule } from "@angular/common/http";
+import { OrdersComponent } from './orders/orders.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HttpClientModule,
     ProdcutsComponent,
     CustomersComponent,
-
-
+    OrdersComponent,
+    OrderDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

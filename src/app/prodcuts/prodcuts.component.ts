@@ -15,7 +15,9 @@ export class ProdcutsComponent implements OnInit{
       next : (data) =>{
         this.products = data
       },
-      error : (err)=>{}
+      error : (err)=>{
+
+      }
     })
   }
 }
